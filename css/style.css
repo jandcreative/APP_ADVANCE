@@ -40,6 +40,7 @@
 
 .app{
   margin:auto;
+  margin-bottom: 20px;
   width: 750px;
   height: auto;
   padding: 20px;
@@ -49,8 +50,9 @@ header{
   position: relative;
 }
 
-header .img{
-  text-align: right;
+header .img {
+    height: 156px;
+    text-align: right;
 }
 
 header .txt {
@@ -109,6 +111,14 @@ h3 {
     padding-top: 14px;
 }
 
+p {
+    color: #0c223f;
+    font-family: "conduit_itc_lightregular";
+    font-size: 19px;
+    margin: 0;
+    padding: 20px;
+}
+
 .perfil {
     padding-top: 10px;
 }
@@ -129,10 +139,93 @@ h3 {
     text-align: right;
 }
 
+.consulta {
+    background-color: #d3d4d5;
+    border-radius: 0 24px;
+    height: 224px;
+}
+
 .consulta .cab {
     background-color: #0c223f;
     border-radius: 0 24px;
     height: 45px;
     margin-top: 14px;
     padding-left: 20px;
+}
+
+textarea{
+    border: 0 none;
+    border-radius: 0 24px;
+    height: 95px;
+    margin: 20px;
+    width: 700px;
+}
+
+
+p {
+    color: #0c223f;
+    font-family: "conduit_itc_lightregular";
+    font-size: 19px;
+    margin: 0;
+    padding: 4px 24px 30px;
+    text-align: left;
+}
+
+.button{
+     text-align: center; 
+}
+
+button {
+    background-color: #e24301;
+    border: 0 none;
+    border-radius: 0 10px;
+    color: #fff;
+    height: 24px;
+    text-align: center;
+    width: 80px;
+}
+
+.consulta_ant {
+    background-color:#d3d4d5;
+    margin-top:  40px;
+    border-radius: 0 24px;
+    height: auto;
+}
+
+.consulta_ant .cab {
+    background-color: #0c223f;
+    border-radius: 0 24px;
+    height: 45px;
+    margin-top: 14px;
+    padding-left: 20px;
+}
+
+
+.odd_row {
+    background-color: #d3d4d5;
+    display: block;
+    height: auto;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.pair_row{
+    background-color: #e8e8e8;
+    display: block;
+    height: auto;
+    vertical-align: middle;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.date{
+  font-family:"conduit_itclight_italic";
+  padding-right:20px;
+  color: #808285;
+}
+
+.consulta_ant a{
+    color: #e24301;
+    padding-left: 4px;
+    text-decoration: none;
 }
