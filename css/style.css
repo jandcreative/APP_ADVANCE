@@ -33,6 +33,19 @@
 
 }
 
+@font-face {
+    font-family: 'conduit_itcbold';
+    src: url('fonts/CONDITCB_0-webfont.eot');
+    src: url('fonts/CONDITCB_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CONDITCB_0-webfont.woff2') format('woff2'),
+         url('fonts/CONDITCB_0-webfont.woff') format('woff'),
+         url('fonts/CONDITCB_0-webfont.ttf') format('truetype'),
+         url('fonts/CONDITCB_0-webfont.svg#conduit_itcbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Fin Fonts */
 
 
@@ -56,7 +69,7 @@ header .img {
 }
 
 header .txt {
-    height: auto;
+    height: 50px;
 }
 
 .txt ul {
@@ -104,11 +117,45 @@ h2 {
 }
 
 h3 {
+    background: url("../img/img_icon_arrow.png") no-repeat scroll 698px 20px rgba(0, 0, 0, 0);
     color: #fff;
+    display: inline-block;
     font-family: "conduit_itc_lightregular";
     font-size: 20px;
     margin: 0;
     padding-top: 14px;
+    width: 100%;
+}
+
+h4 {
+    background: url("../img/img_icon_question.png") no-repeat scroll 10px 0px rgba(0, 0, 0, 0);
+    color: #0c223f;
+    display: inline-block;
+    font-family: "conduit_itc_lightregular";
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    max-width: 706px;
+    padding-left: 44px;
+    padding-top: 4px;
+    text-align: left;
+    width: 100%;
+}
+
+.answer h4 {
+    background: url("../img/img_icon_answer.png") no-repeat scroll 10px 10px rgba(0, 0, 0, 0);
+    color: #0c223f;
+    display: inline-block;
+    font-family: "conduit_itc_lightregular";
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    max-width: 706px;
+    padding-left: 44px;
+    padding-top: 14px;
+    padding-bottom: 4px;
+    text-align: left;
+    width: 100%;
 }
 
 p {
@@ -119,24 +166,30 @@ p {
     padding: 20px;
 }
 
-.perfil {
-    padding-top: 10px;
-}
-
-.perfil li {
+.perfil li span {
+    background: url("../img/img_icon_on.png") no-repeat scroll 0 4px rgba(0, 0, 0, 0);
     color: #0c223f;
     font-family: "conduit_itclight_italic";
     font-size: 15px;
+    padding-left: 20px;
     text-transform: uppercase;
+}
+
+.perfil > li {
+    padding-top: 8px;
 }
 
 .perfil li + li {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.perfil h3{
     color: #e24301;
     font-family: "conduit_itc_lightregular";
     font-size: 25px;
     font-weight: bold;
     text-align: right;
+    padding-top: 0px;
 }
 
 .consulta {
@@ -145,22 +198,46 @@ p {
     height: 224px;
 }
 
+.cab {
+    background-color: #0c223f;
+    border-radius: 0 24px;
+    height: 45px;
+    margin-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .consulta .cab {
     background-color: #0c223f;
     border-radius: 0 24px;
     height: 45px;
     margin-top: 14px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
-textarea{
+input {
+    border: 0 none;
+    border-radius: 0 10px;
+    height: 22px;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+    position: absolute;
+    right: 34px;
+    width: 160px;
+}
+
+textarea {
     border: 0 none;
     border-radius: 0 24px;
-    height: 95px;
+    font-family: "conduit_itc_lightregular";
+    font-size: 20px;
+    height: 70px;
     margin: 20px;
-    width: 700px;
+    padding: 14px;
+    width: 680px;
 }
-
 
 p {
     color: #0c223f;
@@ -193,6 +270,7 @@ button {
 }
 
 .consulta_ant .cab {
+    position: relative;
     background-color: #0c223f;
     border-radius: 0 24px;
     height: 45px;
@@ -228,4 +306,17 @@ button {
     color: #e24301;
     padding-left: 4px;
     text-decoration: none;
+}
+
+.question p{
+  padding-left: 44px;
+}
+
+.answer {
+    background-color: #f4f4f4;
+}
+
+.answer p{
+  padding-left: 44px;
+  color:#666666;
 }
