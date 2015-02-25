@@ -98,13 +98,13 @@ header li + li {
 
 header li span {
     color: #fff;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 15px;
 }
 
 h2 {
     color: #0c223f;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 18px;
     margin: 0;
     padding-top: 7px;
@@ -124,7 +124,7 @@ h3 {
     background: url("../img/img_icon_arrow.png") no-repeat scroll 698px 20px rgba(0, 0, 0, 0);
     color: #fff;
     display: inline-block;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 20px;
     margin: 0;
     padding-top: 14px;
@@ -139,7 +139,7 @@ h4 {
     background: url("../img/img_icon_question.png") no-repeat scroll 10px 0px rgba(0, 0, 0, 0);
     color: #0c223f;
     display: inline-block;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 20px;
     font-weight: 800;
     margin: 0;
@@ -154,7 +154,7 @@ h4 {
     background: url("../img/img_icon_answer.png") no-repeat scroll 10px 10px rgba(0, 0, 0, 0);
     color: #0c223f;
     display: inline-block;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 20px;
     font-weight: 800;
     margin: 0;
@@ -168,7 +168,7 @@ h4 {
 
 p {
     color: #0c223f;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 19px;
     margin: 0;
     padding: 20px;
@@ -176,7 +176,7 @@ p {
 
 .perfil li span {
     color: #0c223f;
-    font-family: "conduit_itclight_italic";
+    font-family: 'conduit_itclight';
     font-size: 15px;
     padding-left: 20px;
     text-transform: uppercase;
@@ -200,7 +200,7 @@ p {
 
 .perfil h3{
     color: #e24301;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 25px;
     font-weight: bold;
     text-align: right;
@@ -280,7 +280,7 @@ input {
 textarea {
     border: 0 none;
     border-radius: 0 24px;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 20px;
     height: 70px;
     margin: 20px;
@@ -290,7 +290,7 @@ textarea {
 
 p {
     color: #0c223f;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 19px;
     margin: 0;
     padding: 4px 24px 30px;
@@ -390,7 +390,7 @@ select {
     border: 0 none;
     border-radius: 4px 0 0 4px;
     color: #666666;
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 18px;
     height: 26px;
     margin-left: 20px;
@@ -413,7 +413,7 @@ select {
 }
 
 p{  
-    font-family: "conduit_itc_lightregular";
+    font-family: 'conduit_itclight';
     font-size: 20px;
     text-align: center;
 }
