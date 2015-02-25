@@ -32,7 +32,7 @@
              <li class="colegiada"><span>VETERINARIA COLEGIADA  Nº1916</span></li>
         </ul> 
         <ul class="perfil">
-            <li><span>Conectada</span></li>
+            <li><span class="on">Conectada</span></li>
             <li><h3>Sonia Fernandez</h3></li>
 
         </ul>
@@ -40,22 +40,41 @@
     </header>
 
 
-    <div class="consulta">
-        <div class="cab">
-            <h3>TU CONSULTA</h3>
-        </div>
-        <textarea placeholder="Escribe tu consulta aquí..."></textarea>
-    <div class="button">
-        <button>ENVIAR</button>
-    </div>
-</div>
 
-        <div class="consulta_ant">
         <div class="cab">
-            <h3>CONSULTAS ANTERIORES</h3>
+            <ul>
+                <li><h3>TU CONSULTA</h3>
+                <li><a href="#"><img src="img/img_icon_arrow_top.png" alt=""></a></li>
+            </ul>
+        </div>
+    <div class="consulta">
+        <textarea placeholder="Escribe tu consulta aquí..."></textarea>
+        <h3>Elige una categoría</h3>
+        <select name="Categoria">
+                    <option value="Cachorros">Cachorros</option>
+                    <option value="Conducta">Conducta</option>
+                    <option value="Curiosidades">Curiosidades</option>
+                    <option value="Educación">Educación</option>
+                    <option value="Nutrición">Nutrición</option>
+                    <option value="Ocio">Ocio</option>
+                    <option value="Razas">Razas</option>
+                    <option value="Dudas Generales">Dudas Generales</option>
+                </select>
+        <div class="button">
+            <button>ENVIAR</button>
+        </div>
+    </div>
+
+
+        <div class="cab">
+           <ul> 
+            <li><h3>CONSULTAS ANTERIORES</h3></li>
+            <li><a href="#"><img src="img/img_icon_arrow_top.png" alt=""></a></li>
+           </ul>
             <input type="text" placeholder="Buscar">
             <input class="lupa">
         </div>
+    <div class="consulta_ant">
         <div class="odd_row">
             <span class="date">09 / 12 / 2014</span>
             <p>Hola, tengo un bodeguero de unos dos años, hace una semana adopté también un labrador de un
@@ -86,6 +105,7 @@ mes que no para de morder. El bodeguero es muy miedoso y como le muerde no quier
 mes que no para de morder. El bodeguero es muy miedoso y como le muerde no quiere acercarse, 
 ¿qué puedo hacer?<a href="#">[ver más]</a></p>
         </div>
+    </div>
 <div class="loading"></div>
 </body>
 

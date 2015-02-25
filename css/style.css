@@ -116,6 +116,15 @@ h2 {
     vertical-align: middle;
 }
 
+.consulta > h3 {
+    color: #0c223f;
+    font-size: 18px;
+    font-weight: 900;
+    max-width: 730px;
+    padding-left: 20px;
+    padding-top: 0;
+}
+
 h3 {
     background: url("../img/img_icon_arrow.png") no-repeat scroll 698px 20px rgba(0, 0, 0, 0);
     color: #fff;
@@ -125,6 +134,10 @@ h3 {
     margin: 0;
     padding-top: 14px;
     width: 100%;
+}
+
+.expand{
+      background: url("../img/img_icon_arrow.png");
 }
 
 h4 {
@@ -167,12 +180,19 @@ p {
 }
 
 .perfil li span {
-    background: url("../img/img_icon_on.png") no-repeat scroll 0 4px rgba(0, 0, 0, 0);
     color: #0c223f;
     font-family: "conduit_itclight_italic";
     font-size: 15px;
     padding-left: 20px;
     text-transform: uppercase;
+}
+
+.on {
+    background: url("../img/img_icon_on.png") no-repeat scroll 0 4px rgba(0, 0, 0, 0);
+}
+
+.off {
+    background: url("../img/img_icon_off.png") no-repeat scroll 0 4px rgba(0, 0, 0, 0);
 }
 
 .perfil > li {
@@ -195,7 +215,11 @@ p {
 .consulta {
     background-color: #d3d4d5;
     border-radius: 0 24px;
-    height: 224px;
+    height: auto;
+    padding-top: 20px;
+    position: relative;
+    top: -20px;
+    z-index: 0;
 }
 
 .cab {
@@ -205,15 +229,35 @@ p {
     margin-top: 14px;
     padding-left: 20px;
     padding-right: 20px;
+    position: relative;
+    z-index: 10000;
 }
 
-.consulta .cab {
-    background-color: #0c223f;
-    border-radius: 0 24px;
-    height: 45px;
-    margin-top: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
+.cab > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.cab li {
+    display: inline-block;
+    list-style: outside none none;
+    width: auto;
+}
+.cab li + li {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: auto;
+}
+
+.consulta_ant {
+    background-color: #d3d4d5;
+    border-radius: 0 24px 24px;
+    height: auto;
+    padding-top: 20px;
+    position: relative;
+    top: -20px;
+    z-index: 0;
 }
 
 input {
@@ -259,7 +303,9 @@ p {
 }
 
 .button{
-     text-align: center; 
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
 }
 
 button {
@@ -276,7 +322,6 @@ button {
     background-color: #d3d4d5;
     border-radius: 0 24px 24px;
     height: auto;
-    margin-top: 40px;
 }
 
 .consulta_ant .cab {
@@ -342,6 +387,21 @@ button {
 .close{
   position: absolute;
   right: 20px;
+}
+
+select {
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
+    border-radius: 4px 0 0 4px;
+    color: #a7a9ac;
+    font-family: "conduit_itc_lightregular";
+    font-size: 18px;
+    height: 26px;
+    margin-left: 20px;
+    padding-left: 4px;
+    padding-top: 4px;
+    vertical-align: middle;
+    width: 160px;
 }
 
 .loading{
