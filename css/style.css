@@ -263,10 +263,10 @@ button {
 }
 
 .consulta_ant {
-    background-color:#d3d4d5;
-    margin-top:  40px;
-    border-radius: 0 24px;
+    background-color: #d3d4d5;
+    border-radius: 0 24px 24px;
     height: auto;
+    margin-top: 40px;
 }
 
 .consulta_ant .cab {
@@ -292,7 +292,6 @@ button {
     display: block;
     height: auto;
     vertical-align: middle;
-    padding-top: 10px;
     text-align: right;
 }
 
@@ -314,9 +313,14 @@ button {
 
 .answer {
     background-color: #f4f4f4;
+    padding-top: 10px;
 }
 
 .answer p{
   padding-left: 44px;
   color:#666666;
+}
+
+.no_show{
+  display: none:;
 }
