@@ -394,7 +394,7 @@ select {
     background: none repeat scroll 0 0 #fff;
     border: 0 none;
     border-radius: 4px 0 0 4px;
-    color: #a7a9ac;
+    color: #666666;
     font-family: "conduit_itc_lightregular";
     font-size: 18px;
     height: 26px;
@@ -403,6 +403,24 @@ select {
     padding-top: 4px;
     vertical-align: middle;
     width: 160px;
+}
+
+.results{
+    color: #666666;
+    background-color: #fff;
+    border-radius: 0 24px;
+    height: 400px;
+    width: 750px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+}
+
+p{  
+    font-family: "conduit_itc_lightregular";
+    font-size: 20px;
+    text-align: center;
 }
 
 .loading{
