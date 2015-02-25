@@ -384,9 +384,10 @@ button {
   display: none;
 }
 
-.close{
-  position: absolute;
-  right: 20px;
+.close {
+    bottom: 14px;
+    position: absolute;
+    right: 20px;
 }
 
 select {
