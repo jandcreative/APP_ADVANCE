@@ -415,7 +415,7 @@ select {
 p{  
     font-family: 'conduit_itclight';
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .loading{
