@@ -1,89 +1,52 @@
-/* GENERAL CHANGES */
-
-/* FONTS */
 
 @font-face {
-    font-family: 'conduit_itclight';
-    src: url('fonts/CONDITCL-webfont.eot');
-    src: url('fonts/CONDITCL-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/CONDITCL-webfont.woff2') format('woff2'),
-         url('fonts/CONDITCL-webfont.woff') format('woff'),
-         url('fonts/CONDITCL-webfont.ttf') format('truetype'),
-         url('fonts/CONDITCL-webfont.svg#conduit_itclight') format('svg');
-    font-weight: normal;
+    font-family: "conduit_itc_lightregular";
     font-style: normal;
-
+    font-weight: normal;
+    src: url("fonts/Conduit_ITC_Light.eot?#iefix") format("embedded-opentype"), url("fonts/Conduit_ITC_Light.woff2") format("woff2"), url("fonts/Conduit_ITC_Light.woff") format("woff"), url("fonts/Conduit_ITC_Light.ttf") format("truetype"), url("fonts/Conduit_ITC_Light.svg#conduit_itc_lightregular") format("svg");
 }
-
 @font-face {
-    font-family: 'conduit_itclight_italic';
-    src: url('fonts/CONITCLI_0-webfont.eot');
-    src: url('fonts/CONITCLI_0-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/CONITCLI_0-webfont.woff2') format('woff2'),
-         url('fonts/CONITCLI_0-webfont.woff') format('woff'),
-         url('fonts/CONITCLI_0-webfont.ttf') format('truetype'),
-         url('fonts/CONITCLI_0-webfont.svg#conduit_itclight_italic') format('svg');
-    font-weight: normal;
+    font-family: "conduit_itclight_italic";
     font-style: normal;
-
+    font-weight: normal;
+    src: url("fonts/CONITCLI_0-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/CONITCLI_0-webfont.woff2") format("woff2"), url("fonts/CONITCLI_0-webfont.woff") format("woff"), url("fonts/CONITCLI_0-webfont.ttf") format("truetype"), url("fonts/CONITCLI_0-webfont.svg#conduit_itclight_italic") format("svg");
 }
-
 @font-face {
-    font-family: 'conduit_itcbold';
-    src: url('fonts/CONDITCB_0-webfont.eot');
-    src: url('fonts/CONDITCB_0-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/CONDITCB_0-webfont.woff2') format('woff2'),
-         url('fonts/CONDITCB_0-webfont.woff') format('woff'),
-         url('fonts/CONDITCB_0-webfont.ttf') format('truetype'),
-         url('fonts/CONDITCB_0-webfont.svg#conduit_itcbold') format('svg');
-    font-weight: normal;
+    font-family: "conduit_itcbold";
     font-style: normal;
-
+    font-weight: normal;
+    src: url("fonts/CONDITCB_0-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/CONDITCB_0-webfont.woff2") format("woff2"), url("fonts/CONDITCB_0-webfont.woff") format("woff"), url("fonts/CONDITCB_0-webfont.ttf") format("truetype"), url("fonts/CONDITCB_0-webfont.svg#conduit_itcbold") format("svg");
 }
-
-/* Fin Fonts */
-
-
-/* APP */
-
-.app{
-  margin:auto;
-  margin-bottom: 20px;
-  width: 750px;
-  height: auto;
-  padding: 20px;
+.app {
+    height: auto;
+    margin: auto auto 20px;
+    padding: 20px;
+    width: 750px;
 }
-
-header{
-  position: relative;
+header {
+    position: relative;
 }
-
 header .img {
     height: 156px;
     text-align: right;
 }
-
 header .txt {
     height: 50px;
 }
-
 .txt ul {
     background-color: #a7a9ac;
     height: 30px;
     margin: 0;
     padding-left: 20px;
 }
-
-.txt  ul + ul{
-    background-color:transparent;
+.txt ul + ul {
+    background-color: transparent;
 }
-
-header li{
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
+header li {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
 }
-
 header li + li {
     background-color: #0c223f;
     border-radius: 0 0 0 24px;
@@ -95,51 +58,47 @@ header li + li {
     text-align: right;
     width: 234px;
 }
-
 header li span {
     color: #fff;
-    font-family: 'conduit_itclight';
+    font-family: "conduit_itc_lightregular";
     font-size: 15px;
 }
-
 h2 {
     color: #0c223f;
-    font-family: 'conduit_itclight';
+    font-family: "conduit_itc_lightregular";
     font-size: 18px;
     margin: 0;
     padding-top: 7px;
     vertical-align: middle;
 }
-
-.consulta > h3 {
+#register_answer h3 {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
     color: #0c223f;
     font-size: 18px;
     font-weight: 900;
     max-width: 730px;
+    padding-bottom: 5px;
     padding-left: 20px;
     padding-top: 0;
 }
-
 h3 {
     background: url("../img/img_icon_arrow.png") no-repeat scroll 698px 20px rgba(0, 0, 0, 0);
     color: #fff;
     display: inline-block;
-    font-family: 'conduit_itclight';
+    font-family: "conduit_itc_lightregular";
     font-size: 20px;
     margin: 0;
     padding-top: 14px;
     width: 100%;
 }
-
-.expand{
-      background: url("../img/img_icon_arrow.png");
+.expand {
+    background: url("../img/img_icon_arrow.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
-
 h4 {
-    background: url("../img/img_icon_question.png") no-repeat scroll 10px 0px rgba(0, 0, 0, 0);
+    background: url("../img/img_icon_question.png") no-repeat scroll 10px 0 rgba(0, 0, 0, 0);
     color: #0c223f;
     display: inline-block;
-    font-family: 'conduit_itclight';
+    font-family: "conduit_itc_lightregular";
     font-size: 20px;
     font-weight: 800;
     margin: 0;
@@ -149,64 +108,55 @@ h4 {
     text-align: left;
     width: 100%;
 }
-
 .answer h4 {
     background: url("../img/img_icon_answer.png") no-repeat scroll 10px 10px rgba(0, 0, 0, 0);
     color: #0c223f;
     display: inline-block;
-    font-family: 'conduit_itclight';
+    font-family: "conduit_itc_lightregular";
     font-size: 20px;
     font-weight: 800;
     margin: 0;
     max-width: 706px;
+    padding-bottom: 4px;
     padding-left: 44px;
     padding-top: 14px;
-    padding-bottom: 4px;
     text-align: left;
     width: 100%;
 }
-
 p {
     color: #0c223f;
-    font-family: 'conduit_itclight';
+    font-family: "conduit_itc_lightregular";
     font-size: 19px;
     margin: 0;
     padding: 20px;
 }
-
 .perfil li span {
     color: #0c223f;
-    font-family: 'conduit_itclight';
+    font-family: "conduit_itclight_italic";
     font-size: 15px;
     padding-left: 20px;
     text-transform: uppercase;
 }
-
 .on {
     background: url("../img/img_icon_on.png") no-repeat scroll 0 4px rgba(0, 0, 0, 0);
 }
-
 .off {
     background: url("../img/img_icon_off.png") no-repeat scroll 0 4px rgba(0, 0, 0, 0);
 }
-
 .perfil > li {
     padding-top: 8px;
 }
-
 .perfil li + li {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
-
-.perfil h3{
+.perfil h3 {
     color: #e24301;
-    font-family: 'conduit_itclight';
+    font-family: "conduit_itc_lightregular";
     font-size: 25px;
     font-weight: bold;
+    padding-top: 0;
     text-align: right;
-    padding-top: 0px;
 }
-
 .consulta {
     background-color: #d3d4d5;
     border-radius: 0 24px;
@@ -216,7 +166,6 @@ p {
     top: -20px;
     z-index: 0;
 }
-
 .cab {
     background-color: #0c223f;
     border-radius: 0 24px;
@@ -227,12 +176,10 @@ p {
     position: relative;
     z-index: 10000;
 }
-
 .cab > ul {
     margin: 0;
     padding: 0;
 }
-
 .cab li {
     display: inline-block;
     list-style: outside none none;
@@ -244,7 +191,6 @@ p {
     top: 12px;
     width: auto;
 }
-
 .consulta_ant {
     background-color: #d3d4d5;
     border-radius: 0 24px 24px;
@@ -254,11 +200,11 @@ p {
     top: -20px;
     z-index: 0;
 }
-
 input {
-    background:#fff;
+    background: none repeat scroll 0 0 #fff;
     border: 0 none;
     border-radius: 0 10px;
+    display: inline-block;
     height: 22px;
     margin-right: 20px;
     margin-top: 10px;
@@ -268,11 +214,41 @@ input {
     top: 0;
     width: 160px;
 }
-
+textarea {
+    border: 0 none;
+    border-radius: 0 24px;
+    font-family: "conduit_itc_lightregular";
+    font-size: 20px;
+    height: 70px;
+    margin: 20px;
+    padding: 14px;
+    width: 680px;
+}
+p {
+    color: #0c223f;
+    font-family: "conduit_itc_lightregular";
+    font-size: 19px;
+    margin: 0;
+    padding: 4px 24px 30px;
+    text-align: left;
+}
+.button {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+button {
+    background-color: #e24301;
+    border: 0 none;
+    border-radius: 0 10px;
+    color: #fff;
+    height: 24px;
+    text-align: center;
+    width: 80px;
+}
 .lupa {
     background: url("../img/img_icon_lupa.png") no-repeat scroll 6px 3px transparent;
-    border:0;
-    border-radius: 0;
+    border: 0 none;
     cursor: pointer;
     display: inline-block;
     height: 24px;
@@ -282,70 +258,19 @@ input {
     width: 27px;
     z-index: 100000;
 }
-
-textarea {
-    border: 0 none;
-    border-radius: 0 24px;
-    font-family: 'conduit_itclight';
-    font-size: 20px;
-    height: 70px;
-    margin: 20px;
-    padding: 14px;
-    width: 680px;
-}
-
-#register_answer h3 {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #0c223f;
-    font-size: 18px;
-    font-weight: 900;
-    max-width: 730px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-top: 0;
-}
-
-p {
-    color: #0c223f;
-    font-family: 'conduit_itclight';
-    font-size: 19px;
-    margin: 0;
-    padding: 4px 24px 30px;
-    text-align: left;
-}
-
-.button{
-     text-align: center;
-     padding-top: 20px;
-     padding-bottom: 20px;
-}
-
-#btnAccess {
-    background-color: #e24301;
-    border: 0 none;
-    border-radius: 0 10px;
-    color: #fff;
-    height: 24px;
-    text-align: center;
-    width: 80px;
-}
-
 .consulta_ant {
     background-color: #d3d4d5;
     border-radius: 0 24px 24px;
     height: auto;
 }
-
 .consulta_ant .cab {
-    position: relative;
     background-color: #0c223f;
     border-radius: 0 24px;
     height: 45px;
     margin-top: 14px;
     padding-left: 20px;
+    position: relative;
 }
-
-
 .odd_row {
     background-color: #d3d4d5;
     display: block;
@@ -353,61 +278,53 @@ p {
     padding-top: 10px;
     text-align: right;
 }
-
-.pair_row{
+.pair_row {
     background-color: #e8e8e8;
     display: block;
     height: auto;
-    vertical-align: middle;
+    padding-top: 10px;
     text-align: right;
+    vertical-align: middle;
 }
-
-.date{
-  font-family:"conduit_itclight_italic";
-  padding-right:20px;
-  color: #808285;
+.date {
+    color: #808285;
+    font-family: "conduit_itclight_italic";
+    padding-right: 20px;
 }
-
-.consulta_ant a{
+.consulta_ant a {
     color: #e24301;
     padding-left: 4px;
     text-decoration: none;
 }
-
-.question{
-  position: relative;
+.question {
+    position: relative;
 }
-
-.question p{
-  padding-left: 44px;
+.question p {
+    padding-left: 44px;
 }
-
 .answer {
     background-color: #f4f4f4;
     padding-top: 10px;
 }
-
-.answer p{
-  padding-left: 44px;
-  color:#666666;
+.answer p {
+    color: #666666;
+    padding-left: 44px;
 }
-
-.no_show{
-  display: none;
+.no_show {
+    display: none;
 }
-
 .close {
     bottom: 14px;
+    cursor: pointer;
     position: absolute;
     right: 20px;
 }
-
 select {
     background: none repeat scroll 0 0 #fff;
     border: 0 none;
     border-radius: 4px 0 0 4px;
     color: #666666;
-    font-family: 'conduit_itclight';
+    font-family: "conduit_itc_lightregular";
     font-size: 18px;
     height: 26px;
     margin-left: 20px;
@@ -416,29 +333,47 @@ select {
     vertical-align: middle;
     width: 160px;
 }
-
-#results{
-    color: #666666;
-    background-color: #fff;
+#results {
     border-radius: 0 24px;
-    height: 400px;
-    width: 750px;
-    padding: 40px;
-    text-align: center;
+    color: #666666;
+    padding: 10px 30px;
     position: relative;
+    text-align: center;
     z-index: 10000;
 }
-
-p{  
-    font-family: 'conduit_itclight';
+.error p {
+    border: 1px solid red;
+    border-radius: 0 24px;
+    color: red;
+    padding: 10px;
+}
+.success p {
+    border: 1px solid #0c223f;
+    border-radius: 0 24px;
+    color: #0c223f;
+    padding: 10px;
+}
+p {
+    font-family: "conduit_itc_lightregular";
     font-size: 20px;
     text-align: left;
 }
-
-.loading{
-  position: absolute;
-  background-color:#fff;
-  opacity: 0.8;
-  width: 100%;
-  height:100%;
+.loading {
+    background-color: #fff;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+}
+.pagination_row {
+    background-color: #f4f4f4;
+    border-radius: 0 0 0 24px;
+    color: #0c223f;
+    cursor: pointer;
+    display: block;
+    font-family: "conduit_itc_lightregular";
+    font-size: 19px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
 }

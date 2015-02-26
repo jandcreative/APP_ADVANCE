@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://www.jdiazportfolio.com/desarollo_atraczion/html/index_6.html -->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <!--<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />-->
+    <meta property="og:title" content="" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://apps.facebook.com/tuexperto/" />
+	<!--<meta property="og:image" content="http://www.advance.es/facebooklayer/TuExperto/IMG/01/Bt_MeGusta.jpg" />-->
+	<meta property="og:description" content="" /> 
+	<meta name="description" content="">
+    <meta name="Keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Tu Experto</title>
+    
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.3"></script>
+	<link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css?v=2.1.2" media="screen" />
+    
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/add_styles.css">
+    <script type="text/javascript" src="js/lazyload.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4ZW9-Ppt062Ft6QZFw1-opXleYKdZEFc&sensor=false"></script>
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">-->
+  
+  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script src="//connect.facebook.net/es_ES/all.js"></script>
+	<script src="js/facebook_func.js"></script>
+	<script src="js/functions.js"></script>
+	<!--<div id="lightbox" class="lightbox" style="display:none">
+    	<div class="lightbox_background"></div>
+        <div class="lightbox_cell">
+        	<span class="cerrar_btn"><a style="cursor:pointer;" onclick="document.getElementById('lightbox').style.display='none';">Cerrar X</a></span>
+			<div class="box_map">
+				<div class="box_left">
+ 					<div class="logos_lb">
+                    	<input id="CP_Inside" type="text" style="border:medium none;height:20px;left:50px;position:absolute;top:135px;width:121px;background-color:transparent;" maxlength="5" />
+                		<input type="button" style="background-color:transparent;border:none;height:40px;left:154px;position:relative;top:93px;width:40px;cursor:pointer;" onclick="MostrarCPMapsInside();" />
+                   	</div>
+					<div id="vets_search" class="vets"></div>
+ 				</div>
+ 				<div class="mapa">
+        			<div id="map_canvas" style="width:98%; height:98% ;margin:5px;"></div>
+        		</div>
+ 			</div>
+		</div>
+    </div>-->
+    <div id="popUpPermission" style="width:520px; display: none; height: 130px; ">
+    	<!-- Hazte fan -->
+		<div id="tegustaFail" style="display:block;">
+			<div class="fondoMeGusta" style="display:block;">
+    			<div>
+					<div id="like_fb_boton" style="display:block; align:center; margin-left: 10px; margin-top: 10px; position: absolute; z-index: 0; top: 0px; left: 0px;"> 
+						<div style="align:center; margin-left: 0px; margin-top: 10px; padding-top: 0px; padding-left: 70px;"> 
+							Sólo te falta <strong>ser fan. Haz click aquí </strong> y ya estás dentro
+						</div>					
+				 		<div style="align:center; margin-left: 125px; margin-top: 10px; padding-left : 70px;">
+							<div id="facebook-MG" class="fb-like" data-href="https://www.facebook.com/Advance.affinity" data-send="false" data-layout="button_count" data-show-faces="false" data-width="199"  height="20px" width="90px" z-index="10000";>
+                            </div> 
+						</div>							
+					</div>
+					<div id="permision_fb_boton" style="display:block; background: none repeat scroll 0 0 #f9f9f9; height: 100px; align:center;padding-left: 90px; margin-left: 10px; padding-top:5px; margin-top: 10px; position: relative; z-index: 1000; overflow: hidden; top: 0px; left: 0px;">
+						¿Quieres saber más? <strong>Haz click aquí</strong> y entra
+						<br />
+						<br />
+						<div style="align:center; margin-left: 48px;">
+							<fb:login-button data-scope="publish_stream" scope="user_likes publish_actions">Permitir acceso a mis favoritos</fb:login-button> 
+						</div>
+					</div>
+	            </div> 
+    	    </div>
+		</div>
+	</div>
+	<div class="app">
+		<header>
+		    <div class="img">
+		           <img src="img/img_cab_app_advance.png" alt="">
+		    </div>
+		    <div class="txt">
+		        <ul>
+		            <li><h2>Si tienes alguna duda sobre tu perro o  tu gato</h2></li>
+		             <li class="colegiada"><span>VETERINARIA COLEGIADA  Nº1916</span></li>
+		        </ul> 
+		        <ul class="perfil">
+		        	<!--<li><span>CONECTADA</span></li>-->
+		            <li id="False"><span class="off">No Conectada</span></li>
+		            <li><h3>Sonia Fernandez</h3></li>
+
+		        </ul>
+		    </div>  
+		</header>
+
+		<div id="accordion">
+			<!--<div class="consulta">
+		        <div class="cab">
+		            <h3>TU CONSULTA</h3>
+		            <a class="button-accordion" data-show="open">Desplegar</a>
+		        </div>-->
+		        <div class="cab">
+		            <ul>
+		                <li><h3>TU CONSULTA</h3>
+		                <li><a class="button-accordion" data-show="open"><img src="img/img_icon_arrow_top.png" alt=""></a></li>
+		            </ul>
+		        </div>
+		        <div class="consulta">
+		        	<div id="results" class="no_show">
+						<!--<p>Tu <strong>Consulta</strong> se ha enviado con &eacute;xito. En breve nuestro experto te responder&aacute;.<br />Gr&aacute; por confiar en <strong>Advance</strong></p>-->
+				    </div>
+		        	<form id="register_answer" action="register_answer.asp">
+				        <textarea name="Consulta" placeholder="Escribe tu consulta aquí..."></textarea>
+				        <h3>Elige una categoría</h3>
+				        <select name="Categoria" >
+				        	<option value="Cachorros">Cachorros</option>
+				  			<option value="Conducta">Conducta</option>
+							<option value="Curiosidades">Curiosidades</option>
+							<option value="Educaci&oacute;n">Educaci&oacute;n</option>
+				            <option value="Nutrici&oacute;n">Nutrici&oacute;n</option>
+				            <option value="Ocio">Ocio</option>
+				            <option value="Razas">Razas</option>
+				            <option value="Dudas Generales">Dudas Generales</option>
+				        </select>
+				        <input name="registroIdFacebook" id="registroIdFacebook" style="display:none" type="text" />
+					    <div class="button">
+					        <!--<button id="btnPermission">ENVIAR</button>-->
+					        <a class="fancybox" href="#popUpPermission" id="btnPermission" style="display:block;" >
+								<!--<img src="img/img_button_consulta.png"/>-->
+								<button style="display:none;">ENVIAR</button>
+							</a>
+							<!--<a href="pag_facebook_2.asp" id="btnAccess" style="display:none;" >-->
+								<!--<img src="img/img_button_consulta.png" />-->
+								<!--<input type="submit" value="Enviar" id="btnAccess" />-->
+								<button id="btnAccess">ENVIAR</button>
+							<!--</a>-->
+					    </div>
+				    </form>
+				    
+				</div>
+			<!--</div>-->
+
+	        <!--<div class="consulta_ant">-->
+		        <div class="cab">
+		            <!--<h3>CONSULTAS ANTERIORES</h3>
+		            <input type="text" placeholder="Buscar">-->
+		            <!--<a class="button-accordion" data-show="open">Desplegar</a>-->
+		            <ul> 
+			            <li><h3>CONSULTAS ANTERIORES</h3></li>
+			            <li><a class="button-accordion" data-show="open"><img src="img/img_icon_arrow_top.png" alt=""></a></li>
+		           </ul>
+		            <form id="searchForm" method="get" action="request.asp">
+		                    	<!--<input type="submit" value=" ">-->
+	                    <input placeholder="Buscar" name="Search" type="text" value=""> 
+						 <button class="lupa"></button>
+	                </form>
+		        </div>
+		        <div class="consulta_ant"> <!--class=content-->
+			        <div id="Scroller">
+			           	<div id="content_Scroller">
+			           			
+						</div>
+						<!--<div id="loading-div">
+			                <img src="img/ajax-loader.gif" />
+			            </div>-->
+			            <div class="loading"></div>
+			        </div>
+		        </div>
+	        </div>
+	    </div>
+    </div>
+</body>
+
+</html>
