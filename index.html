@@ -28,7 +28,7 @@
     </div>
     <div class="txt">
         <ul>
-            <li><h2>Si tienes alguna duda sobre tu perro o  tu gato</h2></li>
+            <li><h2>Si tienes alguna <strong>duda</strong> sobre tu <strong>perro</strong> o  tu <strong>gato, te responderá en breve.</strong></h2></li>
              <li class="colegiada"><span>VETERINARIA COLEGIADA  Nº1916</span></li>
         </ul> 
         <ul class="perfil">
@@ -41,30 +41,55 @@
 
 
 
-        <div class="cab">
-            <ul>
-                <li><h3>TU CONSULTA</h3>
-                <li><a href="#"><img src="img/img_icon_arrow_top.png" alt=""></a></li>
-            </ul>
+    <div id="accordion">
+            <div class="cab">
+                <ul>
+                    <li><h3>TU CONSULTA</h3>
+                    </li><li><a data-show="open" class="button-accordion"><img alt="" src="img/img_icon_arrow_top.png"></a></li>
+                </ul>
+            </div>
+        <div class="consulta">
+            <div style="display: none;" class="message-layer">
+                <div class="message">
+                    <ul>
+                        <li>
+                            <p>Tu Consulta se ha enviado con éxito. <br>
+                            En breve nuestro experto te responderá.<br>
+                            Gracias por confiar en Advance</p>
+                        </li>
+                        <li>
+                            <span id="success-close">
+                                <img src="img/img_close_message.png">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div style="" class="opacity-layer"></div>
+            </div>
+            <form action="register_answer.asp" id="register_answer">
+            <textarea placeholder="Escribe tu consulta aquí..." name="Consulta"></textarea>
+                        <!--<h3>Elige una categoría</h3>-->
+            <select name="Categoria">
+                <option selected="" value="">Seleccione categoria</option>
+                <option value="Cachorros">Cachorros</option>
+                <option value="Conducta">Conducta</option>
+                <option value="Curiosidades">Curiosidades</option>
+                <option value="Educación">Educación</option>
+                <option value="Nutrición">Nutrición</option>
+                <option value="Ocio">Ocio</option>
+                <option value="Razas">Razas</option>
+                <option value="Dudas Generales">Dudas Generales</option>
+            </select>
+            <input type="hidden" value="780248377" id="registroIdFacebook" name="registroIdFacebook">
+            <div class="button">
+                            <!--<a class="fancybox" href="#popUpPermission" id="btnPermission" style="display:block;" >
+                                <button style="display:none;">ENVIAR</button>
+                            </a>--> 
+                <button style="display: none;" id="btnPermission" href="#popUpPermission" class="fancybox">ENVIAR</button>
+                <button style="" id="btnAccess">ENVIAR</button>
+            </div>
+            </form>
         </div>
-    <div class="consulta">
-        <textarea placeholder="Escribe tu consulta aquí..."></textarea>
-        <h3>Elige una categoría</h3>
-        <select name="Categoria">
-                    <option value="Cachorros">Cachorros</option>
-                    <option value="Conducta">Conducta</option>
-                    <option value="Curiosidades">Curiosidades</option>
-                    <option value="Educación">Educación</option>
-                    <option value="Nutrición">Nutrición</option>
-                    <option value="Ocio">Ocio</option>
-                    <option value="Razas">Razas</option>
-                    <option value="Dudas Generales">Dudas Generales</option>
-                </select>
-        <div class="button">
-            <button>ENVIAR</button>
-        </div>
-    </div>
-
 
         <div class="cab">
            <ul> 

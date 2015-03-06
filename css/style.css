@@ -68,7 +68,7 @@ header .txt {
 }
 
 .txt ul {
-    background-color: #a7a9ac;
+    background-color: #d3d4d5;
     height: 30px;
     margin: 0;
     padding-left: 20px;
@@ -106,9 +106,15 @@ h2 {
     color: #0c223f;
     font-family: 'conduit_itclight';
     font-size: 18px;
+    font-weight: normal;
     margin: 0;
     padding-top: 7px;
     vertical-align: middle;
+}
+
+h2 strong {
+    color: #0c223f;
+    font-family: "conduit_itclight";
 }
 
 .consulta > h3 {
@@ -242,7 +248,7 @@ p {
     position: absolute;
     right: 20px;
     top: 12px;
-    width: auto;
+    width: auto;p
 }
 
 .consulta_ant {
@@ -277,8 +283,6 @@ input {
     display: inline-block;
     height: 24px;
     position: absolute;
-    right: 64px;
-    top: 10px;
     width: 27px;
     z-index: 100000;
 }
@@ -400,6 +404,7 @@ p {
     bottom: 14px;
     position: absolute;
     right: 20px;
+    top: 10px;
 }
 
 select {
